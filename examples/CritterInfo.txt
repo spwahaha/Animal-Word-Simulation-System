@@ -1,0 +1,9 @@
+species:  example
+memsize: 0
+defense: 2
+offense: 3
+size: 20
+energy: 500
+posture: 12
+mem[7] != 17 --> mem[7] := 99;
+1 = 1 --> left;

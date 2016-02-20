@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="root_vbox" stylesheets="@airportapp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label text="Zoom" />
+            <Button mnemonicParsing="false" onAction="#zoomOut" text="-" />
+            <Slider fx:id="zoom_slider" />
+            <Button mnemonicParsing="false" onAction="#zoomIn" text="+" />
+            <Label text="Visuals" />
+            <Region HBox.hgrow="ALWAYS" />
+            <ToggleButton fx:id="contrast_togglebutton" mnemonicParsing="false" onAction="#stylingContrast" text="HI contrast" />
+            <ToggleButton fx:id="size_togglebutton" mnemonicParsing="false" onAction="#stylingSizing" text="Large UI" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <SplitPane dividerPositions="0.3294314381270903" VBox.vgrow="ALWAYS">
+         <items>
+            <ListView fx:id="map_listview" onMouseClicked="#listClicked" prefHeight="200.0" prefWidth="200.0" />
+            <ScrollPane fx:id="map_scrollpane" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <Pane fx:id="map_pin">
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@map.jpg" />
+                           </image>
+                        </ImageView>
+                        <MenuButton fx:id="pin_info" layoutX="99.0" layoutY="124.0" mnemonicParsing="false" styleClass="map-pin">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>

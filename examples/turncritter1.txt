@@ -1,0 +1,9 @@
+species: example
+memsize: 9
+defense: 2
+offense: 3
+size: 20
+energy: 500
+posture: 12
+POSTURE != 17 --> POSTURE := 99; // we are species 17!
+1 = 1 --> left;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane alignment="CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="365.0" text="Login" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoClient.LoginController">
+  <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="level_field" layoutX="133.0" layoutY="66.0" promptText="admin/read/write" />
+            <Label layoutX="58.0" layoutY="70.0" text="Level:" />
+            <Label layoutX="61.0" layoutY="110.0" text="Password:" />
+            <PasswordField fx:id="password_field" layoutX="133.0" layoutY="106.0" />
+            <Button fx:id="login_btn" layoutX="157.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#Login" text="Login" />
+            <Button fx:id="cancel_btn" layoutX="225.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#Cancel" text="Cancel" />
+         </children>
+      </AnchorPane>
+  </content>
+</TitledPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane alignment="CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="365.0" text="Food Amount" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoClient.FoodAmountController">
+  <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="363.0">
+         <children>
+            <TextField fx:id="amount_field" layoutX="102.0" layoutY="70.0" promptText="500" />
+            <Label layoutX="116.0" layoutY="39.0" text="Input the food amount" />
+            <Button fx:id="ok_btn" layoutX="116.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#Summit" text="OK" />
+            <Button fx:id="cancel_btn" layoutX="193.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#Cancel" text="Cancel" />
+         </children>
+      </AnchorPane>
+  </content>
+</TitledPane>
